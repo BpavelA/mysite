@@ -626,4 +626,47 @@ table {
 }
 .icons-item__text span {
   font-size: 48px;
+}
+
+.third-section {
+  min-height: 700px;
+  background: #ECECEC;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.third-section__container {
+  display: flex;
+  align-items: center;
+  padding-left: 175px;
+  padding-top: 65px;
+  justify-content: space-between;
+}
+.third-section__right-wrapper {
+  max-width: 480px;
+}
+.third-section__right-title {
+  margin-bottom: 30px;
+}
+.third-section__text {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.third-section__first-elipse {
+  position: absolute;
+  top: 140px;
+  left: 285px;
+  z-index: -1;
+}
+.third-section__figure {
+  position: absolute;
+  top: 215px;
+  left: 170px;
+  z-index: -1;
+}
+.third-section__second-elipse {
+  position: absolute;
+  top: -100px;
+  right: 25px;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
