@@ -4,21 +4,23 @@
 * 
   box-sizing: border-box
 
-@font-face
+@font-face {
   font-family: "MontserratT"
-  src: url('../fonts/Montserrat-Regular.ttf') format('truetype')
-  font-weight: normal
+  src: url('../fonts/Montserrat-Regular.ttf')
+  font-weight: regular
   font-style: normal
+}
 
-@font-face
+@font-face {
   font-family: "MontserratT"
-  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype')
+  src: url('../fonts/Montserrat-SemiBold.ttf')
   font-weight: bold
   font-style: normal
+}
 
 html
   font-family: "MontserratT"
-  font-weight: normal
+  font-weight: regular
 
 $color-yellow: #FFE481
 $color-violet: #918BC0
@@ -63,7 +65,6 @@ $background-color: #ECECEC
   &__list-item
     margin-right: 49px
     font-size: 18px
-    font-weight: bold
     &:last-child
       margin-right: 0px
 
@@ -132,9 +133,7 @@ $background-color: #ECECEC
       font-size: 21px
 
 .title
-  position: relative
   font-size: 60px
-  font-weight: bold
 
 .buttons
   display: inline-flex
@@ -148,7 +147,6 @@ $background-color: #ECECEC
     box-shadow: $shadow
     color: white
     font-size: 18px
-    font-weight: bold
   &__icon-btn
     display: inline-flex
     align-items: center
@@ -156,7 +154,6 @@ $background-color: #ECECEC
       margin-right: 13px
   &__text
     font-size: 16px
-    
 
 .elipse
   height: 199px
@@ -228,7 +225,6 @@ $background-color: #ECECEC
     position: absolute
     top: 144px
     right: -50px
-    font-weight: bold
 
 .cards-item_yellow
   background: $color-yellow
@@ -246,7 +242,6 @@ $background-color: #ECECEC
     font-size: 18px
     span
       font-size: 48px
-      font-weight: bold
 
 .third-section
   min-height: 700px
