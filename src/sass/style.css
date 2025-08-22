@@ -801,33 +801,36 @@ html {
   .main-section {
     min-height: 720px;
   }
-  .right-wrapper {
-    right: -68px;
-  }
-  .right-wrapper__text {
-    margin-bottom: 200px;
-  }
-  .icons__item {
-    height: 50px;
-    width: 50px;
-  }
-  .title, .icons {
-    margin-bottom: 20px;
-  }
-  .buttons {
-    position: absolute;
-    right: 65px;
-    bottom: -105px;
-  }
-  .buttons__main-btn {
-    margin-right: 10px;
-  }
   .main-section__first-elipse {
     right: -77px;
   }
   .main-section__second-elipse {
     top: 666px;
     right: 400px;
+  }
+  .right-wrapper {
+    right: -35px;
+  }
+  .right-wrapper__text {
+    margin-bottom: 200px;
+  }
+  .icons {
+    margin-bottom: 20px;
+  }
+  .icons__item {
+    height: 50px;
+    width: 50px;
+  }
+  .title {
+    margin-right: 15px;
+  }
+  .buttons {
+    position: absolute;
+    right: 45px;
+    top: 390px;
+  }
+  .buttons__main-btn {
+    margin-right: 10px;
   }
   .cards-item {
     height: 225px;
@@ -855,14 +858,20 @@ html {
     flex-direction: column;
   }
   .third-section {
-    min-height: 570px;
-  }
-  .title {
-    margin-right: 15px;
+    min-height: 505px;
   }
   .third-section__container {
     padding-left: 20px;
     padding-top: 40px;
+  }
+  .third-section__left-wrapper {
+    display: none;
+  }
+  .third-section__right-wrapper {
+    max-width: 600px;
+  }
+  .third-section__text {
+    font-size: 16px;
   }
   .footer__title {
     font-size: 50px;
@@ -871,6 +880,39 @@ html {
 @media (max-width: 767px) {
   .container {
     width: 540px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    width: 30px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    height: 14px;
+  }
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: black;
+    margin-bottom: 4px;
+    transition: 1s all;
+  }
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
   }
 }
 @media (max-width: 575px) {

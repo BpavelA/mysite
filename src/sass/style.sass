@@ -346,71 +346,71 @@ $background-color: #ECECEC
 @media (max-width: 991px)
   .container
     width: 730px
-  .left-wrapper__img
-    width: 650px
-
-  .left-wrapper__rectangle-yellow
-    top: 96px
-    left: -30px
-    height: 180px
-    width: 420px
-    border-radius: 100px
-    transform: rotate(294deg)
-
-  .left-wrapper__rectangle-violet
-    top: 135px
-    left: 18px
-    height: 180px
-    width: 420px
-    border-radius: 100px
-    transform: rotate(323deg)
-
-  .left-wrapper__rectangle-green
-    top: 181px
-    left: 38px
-    height: 180px
-    width: 420px
-    border-radius: 100px
-    transform: rotate(345deg)
+  
+  .left-wrapper
+    &__img
+      width: 650px
+    &__rectangle-yellow
+      top: 96px
+      left: -30px
+      height: 180px
+      width: 420px
+      border-radius: 100px
+      transform: rotate(294deg)
+    &__rectangle-violet
+      top: 135px
+      left: 18px
+      height: 180px
+      width: 420px
+      border-radius: 100px
+      transform: rotate(323deg)
+    &__rectangle-green
+      top: 181px
+      left: 38px
+      height: 180px
+      width: 420px
+      border-radius: 100px
+      transform: rotate(345deg)
 
   .main-section
     min-height: 720px
-
-  .right-wrapper
-    right: -68px
-    &__text
-      margin-bottom: 200px
-  .icons__item
-    height: 50px
-    width: 50px
-
-  .title, .icons
-    margin-bottom: 20px
-
-
-  .buttons
-    position: absolute
-    right: 65px
-    bottom: -105px 
-    &__main-btn
-      margin-right: 10px
-      
-  .main-section
     &__first-elipse
       right: -77px
     &__second-elipse
       top: 666px
       right: 400px
 
+  .right-wrapper
+    right: -35px
+    &__text
+      margin-bottom: 200px
+  
+  .icons
+    margin-bottom: 20px
+    &__item
+      height: 50px
+      width: 50px
+
+  .title
+    margin-right: 15px
+
+  .buttons
+    position: absolute
+    right: 45px
+    top: 390px 
+    &__main-btn
+      margin-right: 10px
+      
   .cards-item
     height: 225px
     width: 225px
-  .cards-item__img
-    height: 195px
-  .cards-item__text
-    font-size: 26px
-    top: 88px
-    right: -75px
+    &__img
+      height: 195px
+    &__text
+      font-size: 26px
+      top: 88px
+      right: -75px
+  
   .second-section
     min-height: 570px
     &__first-elipse
@@ -422,35 +422,54 @@ $background-color: #ECECEC
       flex-direction: column 
 
   .third-section
-    min-height: 570px
-  
-  .title
-    margin-right: 15px
+    min-height: 505px
+    &__container
+      padding-left: 20px
+      padding-top: 40px
 
-  .third-section__container
-    padding-left: 20px
-    padding-top: 40px
-
+    &__left-wrapper
+      display: none
+    &__right-wrapper
+      max-width: 600px
+    &__text
+      font-size: 16px
 
   .footer
     &__title
       font-size: 50px
-  
-  // .third-section__right-wrapper
-  //   max-width: 450px
-  // .third-section__figure
-  //   left: 55px
-  // .third-section__first-elipse
-  //   left: 165px
-  // .footer__img
-  //   width: 50%
-  //   left: -40px
 
 // Версия под горизонтальный телефон
 
 @media (max-width: 767px)
   .container
     width: 540px
+  .nav-menu
+    display: none
+  .hamburger
+    width: 30px
+    position: absolute
+    top: 40px
+    right: 30px
+    height: 14px
+    span
+      height: 2px
+      width: 100%
+      display: block
+      background: black
+      margin-bottom: 4px
+      transition: 1s all
+      &:last-child
+        margin-bottom: 0
+  .hamburger_active
+    span
+      margin-bottom: -2px
+      &:nth-child(1)
+        transform: translateY(3px) rotate(-45deg)
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        transform: translateY(3px) rotate(45deg)
+        
 
 // Версия под вертикальный телефон
 
