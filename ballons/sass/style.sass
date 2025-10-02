@@ -16,8 +16,71 @@ body
  background-color: #F7F7F7
 
 .header
+ position: relative
  height: 95vh
  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0%, rgba(1, 1, 1, 0.7) 100%), url(/ballons/img/ballons_picture.png)
  background-size: cover
  background-repeat: no-repeat
  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%)
+ // clip-path: polygon(0 25%, 60% 25%, 60% 0, 100% 50%, 60% 100%, 60% 75%, 0 75%)
+ &__logo
+  position: absolute
+  height: 70px
+  width: 56px
+  top: 50px
+  left: 50px
+ &__box
+  position: absolute
+  width: 100%
+  top: 36%
+  text-align: center
+  
+.title-first
+ color: white
+ &__main
+  display: block
+  text-transform: uppercase
+  letter-spacing: 10px
+  line-height: 60px
+  font-weight: 800
+  font-size: 50px
+  margin-bottom: 10px
+  animation-name: leftToRight
+  animation-duration: 2s
+  animation-delay: 1s
+  animation-timing-function: ease
+
+ &__secondary
+  display: block
+  letter-spacing: 5px
+  line-height: 48px
+  font-weight: 200
+  font-size: 40px
+  animation-name: rightToLeft
+  animation-duration: 2s
+  animation-delay: 1s
+  animation-timing-function: ease
+
+@keyframes leftToRight
+ 0%
+  opacity: 0
+  transform: translateX(-100px)
+
+ 80%
+  transform: translateX(10px)
+
+ 100%
+  opacity: 1
+  transform: translateX(0)
+
+@keyframes rightToLeft
+ 0%
+  opacity: 0
+  transform: translateX(100px)
+
+ 80%
+  transform: translateX(-10px)
+
+ 100%
+  opacity: 1
+  transform: translateX(0)
